@@ -1,8 +1,11 @@
 # Graphusion 
+**Graphusion: A RAG Framework for Scientific Knowledge Graph Construction with a Global Perspective**
+Rui Yang, Boming Yang, Xinjie Zhao, Fan Gao, Aosong Feng, Sixun Ouyang, Moritz Blum, Tianwei She, Yuang Jiang, Freddy Lecue, Jinghui Lu, Irene Li;
+Accepted by [NLP4KGC]([url](https://sites.google.com/view/4rthnlp4kgc/home?authuser=0)) workshop, WWW 2025. 
 
-Graphusion is a pipeline that extract Knowledge Graph triples from text.
+Graphusion is a pipeline that extracts Knowledge Graph triples from text.
 
-![Architecture](fig_architecture.png)
+![Architecture](graphusion_main.png)
 
 
 ## Setup
@@ -79,3 +82,13 @@ To run the full pipeline on a small sample (`test`) dataset, call:
 
 To reproduce the Graphusion results on the ACL (`nlp) dataset, call:
 `python main.py --run_name "acl" --dataset "nlp" --relation_definitions_file "data/nlp/relation_types.json" --gold_concept_file "data/nlp/gold_concepts.tsv" --refined_concepts_file "data/nlp/refined_concepts.tsv"`
+
+## Cite
+```
+@inproceedings{yang2025graphusion,
+  title={Graphusion: A RAG Framework for Scientific Knowledge Graph Construction with a Global Perspective},
+  author={Yang, Rui and Yang, Boming and Zhao, Xinjie and Gao, Fan and Feng, Aosong and Ouyang, Sixun and Blum, Moritz and She, Tianwei and Jiang, Yuang and Lecue, Freddy and Lu, Jinghui and Li, Irene},
+  booktitle={Proceedings of the NLP4KGC Workshop at the World Wide Web Conference (WWW) 2025},
+  year={2025}
+}
+```
