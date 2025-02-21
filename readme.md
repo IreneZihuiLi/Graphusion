@@ -1,7 +1,9 @@
-# Graphusion 
+# Graphusion: Your Personal Local Knowledge Graph Builder ⚙
 **Graphusion: A RAG Framework for Scientific Knowledge Graph Construction with a Global Perspective**
+
 Rui Yang, Boming Yang, Xinjie Zhao, Fan Gao, Aosong Feng, Sixun Ouyang, Moritz Blum, Tianwei She, Yuang Jiang, Freddy Lecue, Jinghui Lu, Irene Li;
-Accepted by [NLP4KGC]([url](https://sites.google.com/view/4rthnlp4kgc/home?authuser=0)) workshop, WWW 2025. 
+
+Accepted by [NLP4KGC](https://sites.google.com/view/4rthnlp4kgc/home?authuser=0) workshop, WWW 2025. 
 
 Graphusion is a pipeline that extracts Knowledge Graph triples from text.
 
