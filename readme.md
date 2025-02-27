@@ -18,6 +18,22 @@ conda activate graphusion
 pip install -r requirements.txt
 ```
 
+## Credentials
+Sensitive data like API and database keys shall be stored in a `private_config.json` file in the root directory. 
+The file should have the following structure:
+
+```
+{
+  "OPENAI_API_KEY": "[key]",
+  "GOOGLE_API_KEY": "[key]",
+  "NEO4J": {
+    "URI": "[uri]",
+    "USER": "[user]",
+    "PASSWORD":"[password]"
+  }
+}
+```
+
 
 ## Usage
 The pipeline processes text files from the `data/[dataset_name]/raw` directory (e.g., `data/test/raw`) as input. 
@@ -84,6 +100,10 @@ To run the full pipeline on a small sample (`test`) dataset, call:
 
 To reproduce the Graphusion results on the ACL (`nlp) dataset, call:
 `python main.py --run_name "acl" --dataset "nlp" --relation_definitions_file "data/nlp/relation_types.json" --gold_concept_file "data/nlp/gold_concepts.tsv" --refined_concepts_file "data/nlp/refined_concepts.tsv"`
+
+## Credits
+This implementation is based on the code of Rui Yang and Irene Li. Moritz Blum extended their code and implemented this pipeline.
+
 
 ## Cite
 ```
